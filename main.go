@@ -17,7 +17,7 @@ import (
 const usage = "fpc <expvar|prom|metrics|sm>"
 
 var duration = flag.Duration("dur", 10*time.Second, "how long to run test")
-var conc = flag.Int("conc", 3, "how many goroutines to launch")
+var conc = flag.Int("conc", runtime.NumCPU()-1, "how many goroutines to launch")
 var sched = flag.Int("sched", 10000, "number of increments to perform before forcing go scheduler yield")
 
 func main() {
@@ -36,7 +36,7 @@ func main() {
 	case "expvar":
 		counter := expvar.NewInt("test")
 		printFunc = func(dur time.Duration) {
-			fmt.Printf("%-10s: %0.2E in %s\n", test, float64(counter.Value()), dur)
+			fmt.Printf("%-10s: %4d goroutines got to %0.2E in %s\n", test, *conc, float64(counter.Value()), dur)
 		}
 		for i := 0; i < concurrency; i++ {
 			go func() {
@@ -51,7 +51,7 @@ func main() {
 	case "metrics":
 		c := metrics.NewCounter()
 		printFunc = func(dur time.Duration) {
-			fmt.Printf("%-10s: %0.2E in %s\n", test, float64(c.Count()), dur)
+			fmt.Printf("%-10s: %4d goroutines got to %0.2E in %s\n", test, *conc, float64(c.Count()), dur)
 		}
 		for i := 0; i < concurrency; i++ {
 			go func() {
@@ -73,7 +73,7 @@ func main() {
 		printFunc = func(dur time.Duration) {
 			metric := &dto.Metric{}
 			p.Write(metric)
-			fmt.Printf("%-10s: %0.2E in %s\n", test, *metric.Counter.Value, dur)
+			fmt.Printf("%-10s: %4d goroutines got to %0.2E in %s\n", test, *conc, *metric.Counter.Value, dur)
 		}
 		for i := 0; i < concurrency; i++ {
 			go func() {
@@ -95,7 +95,7 @@ func main() {
 		printFunc = func(dur time.Duration) {
 			metric := &dto.Metric{}
 			p.Write(metric)
-			fmt.Printf("%-10s: %0.2E in %s\n", test, *metric.Counter.Value, dur)
+			fmt.Printf("%-10s: %4d goroutines got to %0.2E in %s\n", test, *conc, *metric.Counter.Value, dur)
 		}
 		for i := 0; i < concurrency; i++ {
 			go func() {
