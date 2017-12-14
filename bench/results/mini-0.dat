@@ -1,0 +1,49 @@
+prom      :    1 goroutines got to 3.46E+09 in 1m0.000064758s
+expvar    :    1 goroutines got to 4.22E+09 in 1m0.000088848s
+metrics   :    1 goroutines got to 4.10E+09 in 1m0.000055154s
+sm        :    1 goroutines got to 4.22E+09 in 1m0.000035346s
+
+prom      :    2 goroutines got to 9.81E+08 in 1m0.000120962s
+expvar    :    2 goroutines got to 1.59E+09 in 1m0.000074341s
+metrics   :    2 goroutines got to 1.57E+09 in 1m0.000092058s
+sm        :    2 goroutines got to 2.45E+09 in 1m0.000084386s
+
+prom      :    4 goroutines got to 6.06E+08 in 1m0.000091528s
+expvar    :    4 goroutines got to 1.93E+09 in 1m0.000105534s
+metrics   :    4 goroutines got to 1.89E+09 in 1m0.000095696s
+sm        :    4 goroutines got to 2.93E+09 in 1m0.000087558s
+
+prom      :    8 goroutines got to 4.32E+08 in 1m0.201549442s
+expvar    :    8 goroutines got to 2.25E+09 in 1m0.168891676s
+metrics   :    8 goroutines got to 2.18E+09 in 1m0.231050008s
+sm        :    8 goroutines got to 2.91E+09 in 1m0.237333744s
+
+prom      :   16 goroutines got to 4.26E+08 in 1m0.241895841s
+expvar    :   16 goroutines got to 2.29E+09 in 1m0.241567191s
+metrics   :   16 goroutines got to 2.17E+09 in 1m0.219596018s
+sm        :   16 goroutines got to 3.39E+09 in 1m0.07652676s
+
+prom      :   32 goroutines got to 4.34E+08 in 1m0.186865599s
+expvar    :   32 goroutines got to 2.22E+09 in 1m0.250262542s
+metrics   :   32 goroutines got to 2.21E+09 in 1m0.202189615s
+sm        :   32 goroutines got to 3.40E+09 in 1m0.230027193s
+
+prom      :   64 goroutines got to 4.52E+08 in 1m0.26418138s
+expvar    :   64 goroutines got to 2.27E+09 in 1m0.177862407s
+metrics   :   64 goroutines got to 2.21E+09 in 1m0.189691173s
+sm        :   64 goroutines got to 2.25E+09 in 1m0.173757483s
+
+prom      :  128 goroutines got to 4.29E+08 in 1m0.318429737s
+expvar    :  128 goroutines got to 2.29E+09 in 1m0.181184735s
+metrics   :  128 goroutines got to 2.14E+09 in 1m0.16904221s
+sm        :  128 goroutines got to 2.76E+09 in 1m0.243654395s
+
+prom      :  256 goroutines got to 4.65E+08 in 1m0.551092724s
+expvar    :  256 goroutines got to 2.23E+09 in 1m0.27125018s
+metrics   :  256 goroutines got to 2.14E+09 in 1m0.237422147s
+sm        :  256 goroutines got to 3.40E+09 in 1m0.271466761s
+
+prom      :  512 goroutines got to 4.31E+08 in 1m0.582299572s
+expvar    :  512 goroutines got to 2.23E+09 in 1m0.303997123s
+metrics   :  512 goroutines got to 2.21E+09 in 1m0.274234598s
+sm        :  512 goroutines got to 2.91E+09 in 1m0.29881919s

@@ -1,0 +1,79 @@
+prom      :    1 goroutines got to 3.48E+09 in 1m0.000035175s
+expvar    :    1 goroutines got to 4.22E+09 in 1m0.000082301s
+metrics   :    1 goroutines got to 4.09E+09 in 1m0.00003964s
+sm        :    1 goroutines got to 4.19E+09 in 1m0.00006412s
+
+prom      :    2 goroutines got to 9.40E+08 in 1m0.000119165s
+expvar    :    2 goroutines got to 1.88E+09 in 1m0.000136973s
+metrics   :    2 goroutines got to 1.58E+09 in 1m0.000101647s
+sm        :    2 goroutines got to 2.62E+09 in 1m0.000108207s
+
+prom      :    3 goroutines got to 7.75E+08 in 1m0.000076921s
+expvar    :    3 goroutines got to 1.80E+09 in 1m0.0000968s
+metrics   :    3 goroutines got to 1.70E+09 in 1m0.000118651s
+sm        :    3 goroutines got to 2.83E+09 in 1m0.000096261s
+
+prom      :    4 goroutines got to 6.14E+08 in 1m0.00007732s
+expvar    :    4 goroutines got to 1.91E+09 in 1m0.000110247s
+metrics   :    4 goroutines got to 1.87E+09 in 1m0.000067692s
+sm        :    4 goroutines got to 2.87E+09 in 1m0.000099372s
+
+prom      :    5 goroutines got to 5.70E+08 in 1m0.000106504s
+expvar    :    5 goroutines got to 1.98E+09 in 1m0.000095065s
+metrics   :    5 goroutines got to 1.98E+09 in 1m0.000102657s
+sm        :    5 goroutines got to 2.93E+09 in 1m0.000101927s
+
+prom      :    6 goroutines got to 5.57E+08 in 1m0.000087837s
+expvar    :    6 goroutines got to 2.05E+09 in 1m0.000100061s
+metrics   :    6 goroutines got to 2.08E+09 in 1m0.000089331s
+sm        :    6 goroutines got to 3.12E+09 in 1m0.000091833s
+
+prom      :    7 goroutines got to 4.96E+08 in 1m0.000050186s
+expvar    :    7 goroutines got to 2.18E+09 in 1m0.000046468s
+metrics   :    7 goroutines got to 2.14E+09 in 1m0.000052113s
+sm        :    7 goroutines got to 2.91E+09 in 1m0.000055906s
+
+prom      :    8 goroutines got to 4.62E+08 in 1m0.150368848s
+expvar    :    8 goroutines got to 2.26E+09 in 1m0.080408117s
+metrics   :    8 goroutines got to 2.13E+09 in 1m0.212667501s
+sm        :    8 goroutines got to 3.03E+09 in 1m0.134095432s
+
+prom      :   16 goroutines got to 4.32E+08 in 1m0.215848073s
+expvar    :   16 goroutines got to 2.22E+09 in 1m0.144795841s
+metrics   :   16 goroutines got to 2.16E+09 in 1m0.207306116s
+sm        :   16 goroutines got to 2.90E+09 in 1m0.142322458s
+
+prom      :   32 goroutines got to 4.63E+08 in 1m0.249966429s
+expvar    :   32 goroutines got to 2.22E+09 in 1m0.197981067s
+metrics   :   32 goroutines got to 2.18E+09 in 1m0.158656958s
+sm        :   32 goroutines got to 2.03E+09 in 1m0.168768671s
+
+prom      :   64 goroutines got to 4.63E+08 in 1m0.27302844s
+expvar    :   64 goroutines got to 2.27E+09 in 1m0.202134716s
+metrics   :   64 goroutines got to 2.14E+09 in 1m0.181344487s
+sm        :   64 goroutines got to 2.91E+09 in 1m0.209633239s
+
+prom      :  128 goroutines got to 4.26E+08 in 1m0.255003276s
+expvar    :  128 goroutines got to 2.23E+09 in 1m0.235203736s
+metrics   :  128 goroutines got to 2.23E+09 in 1m0.19123628s
+sm        :  128 goroutines got to 2.91E+09 in 1m0.229957655s
+
+prom      :  256 goroutines got to 4.27E+08 in 1m0.401279294s
+expvar    :  256 goroutines got to 2.23E+09 in 1m0.254829945s
+metrics   :  256 goroutines got to 2.14E+09 in 1m0.328301449s
+sm        :  256 goroutines got to 2.76E+09 in 1m0.219738347s
+
+prom      :  512 goroutines got to 4.37E+08 in 1m0.827018588s
+expvar    :  512 goroutines got to 2.22E+09 in 1m0.321206341s
+metrics   :  512 goroutines got to 2.20E+09 in 1m0.262605567s
+sm        :  512 goroutines got to 2.77E+09 in 1m0.371952428s
+
+prom      : 1024 goroutines got to 4.39E+08 in 1m1.790986602s
+expvar    : 1024 goroutines got to 2.23E+09 in 1m0.513108559s
+metrics   : 1024 goroutines got to 2.26E+09 in 1m0.406321679s
+sm        : 1024 goroutines got to 2.77E+09 in 1m0.352186456s
+
+prom      : 2048 goroutines got to 4.43E+08 in 1m2.612537744s
+expvar    : 2048 goroutines got to 2.23E+09 in 1m0.516224195s
+metrics   : 2048 goroutines got to 2.22E+09 in 1m0.685509925s
+sm        : 2048 goroutines got to 2.92E+09 in 1m0.475248256s
