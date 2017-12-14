@@ -1,0 +1,79 @@
+prom      :    1 goroutines 7.03E+07 /s got to 1.41E+09 in 20.000082742s
+expvar    :    1 goroutines 7.85E+07 /s got to 1.57E+09 in 20.000288233s
+metrics   :    1 goroutines 7.31E+07 /s got to 1.46E+09 in 20.000338369s
+sm        :    1 goroutines 6.53E+07 /s got to 1.31E+09 in 20.000203838s
+
+prom      :    2 goroutines 2.04E+07 /s got to 4.08E+08 in 20.00034134s
+expvar    :    2 goroutines 2.20E+07 /s got to 4.41E+08 in 20.00027187s
+metrics   :    2 goroutines 1.93E+07 /s got to 3.86E+08 in 20.00020272s
+sm        :    2 goroutines 2.36E+07 /s got to 4.72E+08 in 20.000286071s
+
+prom      :    3 goroutines 2.47E+07 /s got to 4.95E+08 in 20.000428855s
+expvar    :    3 goroutines 2.01E+07 /s got to 4.02E+08 in 20.000232194s
+metrics   :    3 goroutines 1.74E+07 /s got to 3.47E+08 in 20.000233973s
+sm        :    3 goroutines 2.16E+07 /s got to 4.33E+08 in 20.000349826s
+
+prom      :    4 goroutines 2.04E+07 /s got to 4.08E+08 in 20.000160917s
+expvar    :    4 goroutines 1.50E+07 /s got to 3.01E+08 in 20.000225511s
+metrics   :    4 goroutines 1.56E+07 /s got to 3.12E+08 in 20.000138119s
+sm        :    4 goroutines 2.02E+07 /s got to 4.05E+08 in 20.000170586s
+
+prom      :    5 goroutines 2.13E+07 /s got to 4.25E+08 in 20.000307268s
+expvar    :    5 goroutines 1.64E+07 /s got to 3.29E+08 in 20.000331322s
+metrics   :    5 goroutines 1.58E+07 /s got to 3.15E+08 in 20.000302256s
+sm        :    5 goroutines 2.05E+07 /s got to 4.10E+08 in 20.00045397s
+
+prom      :    6 goroutines 1.99E+07 /s got to 3.98E+08 in 20.000295351s
+expvar    :    6 goroutines 1.61E+07 /s got to 3.23E+08 in 20.000238426s
+metrics   :    6 goroutines 1.46E+07 /s got to 2.92E+08 in 20.000261996s
+sm        :    6 goroutines 2.04E+07 /s got to 4.07E+08 in 20.000198726s
+
+prom      :    7 goroutines 2.44E+07 /s got to 4.88E+08 in 20.000328873s
+expvar    :    7 goroutines 1.63E+07 /s got to 3.26E+08 in 20.000273522s
+metrics   :    7 goroutines 1.31E+07 /s got to 2.62E+08 in 20.000337684s
+sm        :    7 goroutines 2.02E+07 /s got to 4.04E+08 in 20.000313833s
+
+prom      :    8 goroutines 2.29E+07 /s got to 4.57E+08 in 20.000234245s
+expvar    :    8 goroutines 1.70E+07 /s got to 3.40E+08 in 20.000283193s
+metrics   :    8 goroutines 1.57E+07 /s got to 3.14E+08 in 20.000271985s
+sm        :    8 goroutines 2.31E+07 /s got to 4.62E+08 in 20.000295733s
+
+prom      :   16 goroutines 2.07E+07 /s got to 4.14E+08 in 20.000559265s
+expvar    :   16 goroutines 1.53E+07 /s got to 3.06E+08 in 20.000343187s
+metrics   :   16 goroutines 1.49E+07 /s got to 2.98E+08 in 20.000621548s
+sm        :   16 goroutines 2.00E+07 /s got to 4.01E+08 in 20.00026382s
+
+prom      :   32 goroutines 2.89E+07 /s got to 5.79E+08 in 20.000268604s
+expvar    :   32 goroutines 2.24E+07 /s got to 4.47E+08 in 20.000865577s
+metrics   :   32 goroutines 2.25E+07 /s got to 4.50E+08 in 20.000663255s
+sm        :   32 goroutines 2.65E+07 /s got to 5.29E+08 in 20.000823855s
+
+prom      :   64 goroutines 3.16E+07 /s got to 6.34E+08 in 20.050742233s
+expvar    :   64 goroutines 2.47E+07 /s got to 4.94E+08 in 20.011770652s
+metrics   :   64 goroutines 2.46E+07 /s got to 4.93E+08 in 20.012646379s
+sm        :   64 goroutines 2.92E+07 /s got to 5.83E+08 in 20.004757861s
+
+prom      :  128 goroutines 3.15E+07 /s got to 6.32E+08 in 20.028052993s
+expvar    :  128 goroutines 2.44E+07 /s got to 4.88E+08 in 20.024206526s
+metrics   :  128 goroutines 2.44E+07 /s got to 4.88E+08 in 20.030589326s
+sm        :  128 goroutines 2.86E+07 /s got to 5.73E+08 in 20.019487602s
+
+prom      :  256 goroutines 3.08E+07 /s got to 6.17E+08 in 20.057806354s
+expvar    :  256 goroutines 2.52E+07 /s got to 5.05E+08 in 20.056379049s
+metrics   :  256 goroutines 2.35E+07 /s got to 4.70E+08 in 20.049916255s
+sm        :  256 goroutines 3.04E+07 /s got to 6.10E+08 in 20.058525568s
+
+prom      :  512 goroutines 3.19E+07 /s got to 6.42E+08 in 20.164172101s
+expvar    :  512 goroutines 2.52E+07 /s got to 5.08E+08 in 20.181054195s
+metrics   :  512 goroutines 2.43E+07 /s got to 4.90E+08 in 20.157735841s
+sm        :  512 goroutines 2.92E+07 /s got to 5.87E+08 in 20.13951884s
+
+prom      : 1024 goroutines 3.15E+07 /s got to 6.41E+08 in 20.318482119s
+expvar    : 1024 goroutines 1.43E+07 /s got to 2.92E+08 in 20.460434715s
+metrics   : 1024 goroutines 2.44E+07 /s got to 4.95E+08 in 20.279094586s
+sm        : 1024 goroutines 2.88E+07 /s got to 5.82E+08 in 20.236957826s
+
+prom      : 2048 goroutines 3.00E+07 /s got to 6.12E+08 in 20.412519178s
+expvar    : 2048 goroutines 2.48E+07 /s got to 5.11E+08 in 20.597341975s
+metrics   : 2048 goroutines 2.45E+07 /s got to 5.19E+08 in 21.154622322s
+sm        : 2048 goroutines 2.82E+07 /s got to 5.76E+08 in 20.400498508s
