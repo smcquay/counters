@@ -6,16 +6,17 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 	metrics "github.com/rcrowley/go-metrics"
+	"github.com/smcquay/prom"
 )
 
 var fpc prometheus.Counter
 var p prometheus.Counter
 
 func init() {
-	fpc = prometheus.NewFixedPrecisionCounter(prometheus.Opts{
+	fpc = prom.NewCounter(prometheus.CounterOpts{
 		Name: "foo",
 		Help: "helpful message about foo",
-	}, 0)
+	}, 2)
 	p = prometheus.NewCounter(prometheus.CounterOpts{Name: "pfoo", Help: "pfoo help"})
 	prometheus.MustRegister(fpc)
 	prometheus.MustRegister(p)

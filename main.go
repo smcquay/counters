@@ -8,10 +8,10 @@ import (
 	"runtime"
 	"time"
 
-	clm "github.com/ContextLogic/mongo_proxy/metrics"
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
 	metrics "github.com/rcrowley/go-metrics"
+	"github.com/smcquay/prom"
 )
 
 const usage = "fpc <expvar|prom|metrics|sm>"
@@ -86,11 +86,12 @@ func main() {
 			}()
 		}
 	case "sm":
-		p := clm.NewCounter(
-			prometheus.Opts{
+		p := prom.NewCounter(
+			prometheus.CounterOpts{
 				Name: "counter",
 				Help: "A counter metric",
 			},
+			2,
 		)
 		printFunc = func(dur time.Duration) {
 			metric := &dto.Metric{}
