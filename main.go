@@ -36,7 +36,7 @@ func main() {
 	case "expvar":
 		counter := expvar.NewInt("test")
 		printFunc = func(dur time.Duration) {
-			fmt.Printf("%-10s: %4d goroutines got to %0.2E in %s\n", test, *conc, float64(counter.Value()), dur)
+			render(test, *conc, float64(counter.Value()), dur)
 		}
 		for i := 0; i < concurrency; i++ {
 			go func() {
@@ -51,7 +51,7 @@ func main() {
 	case "metrics":
 		c := metrics.NewCounter()
 		printFunc = func(dur time.Duration) {
-			fmt.Printf("%-10s: %4d goroutines got to %0.2E in %s\n", test, *conc, float64(c.Count()), dur)
+			render(test, *conc, float64(c.Count()), dur)
 		}
 		for i := 0; i < concurrency; i++ {
 			go func() {
@@ -73,7 +73,7 @@ func main() {
 		printFunc = func(dur time.Duration) {
 			metric := &dto.Metric{}
 			p.Write(metric)
-			fmt.Printf("%-10s: %4d goroutines got to %0.2E in %s\n", test, *conc, *metric.Counter.Value, dur)
+			render(test, *conc, *metric.Counter.Value, dur)
 		}
 		for i := 0; i < concurrency; i++ {
 			go func() {
@@ -81,7 +81,7 @@ func main() {
 					if j%*sched == 0 {
 						runtime.Gosched()
 					}
-					p.Add(float64(1))
+					p.Inc()
 				}
 			}()
 		}
@@ -96,7 +96,7 @@ func main() {
 		printFunc = func(dur time.Duration) {
 			metric := &dto.Metric{}
 			p.Write(metric)
-			fmt.Printf("%-10s: %4d goroutines got to %0.2E in %s\n", test, *conc, *metric.Counter.Value, dur)
+			render(test, *conc, *metric.Counter.Value, dur)
 		}
 		for i := 0; i < concurrency; i++ {
 			go func() {
@@ -116,4 +116,9 @@ func main() {
 	s := time.Now()
 	time.Sleep(*duration)
 	printFunc(time.Since(s))
+}
+
+func render(name string, conc int, val float64, dur time.Duration) {
+	aps := val / dur.Seconds()
+	fmt.Printf("%-10s: %4d goroutines %0.2E /s got to %0.2E in %s\n", name, conc, aps, val, dur)
 }
